@@ -1,16 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "My Fist Blog Post"
 pubDate: 2023-07-10
 description: "This is the first post of my new Astro blog."
 author: eomchanu
 image:
-    url: "https://docs.astro.build/assets/full-logo-light.png"
+    url: "../../../public/astro-logo-dark.png"
     alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning in public"]
 ---
-# My First Blog Post
-
-Published on: 2023-07-10
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
