@@ -5,7 +5,7 @@ pubDate: 2023-07-10
 description: "This is the first post of my new Astro blog."
 author: eomchanu
 image:
-    url: "../../../public/astro-logo-dark.webp"
+    url: "/astro-logo-dark.webp"
     alt: "The full Astro logo."
 tags: ["astro", "blogging", "learning_in_public"]
 ---
