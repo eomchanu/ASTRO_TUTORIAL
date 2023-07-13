@@ -63,6 +63,7 @@ h1 {
 .nav-links a:hover, a:focus {
     background-color: #7c8bcd;
     color: white;
+    border-radius: 10px;
 
 }
   
