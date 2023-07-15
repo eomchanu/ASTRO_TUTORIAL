@@ -89,3 +89,12 @@ h1 {
         display: none;
     }
 }
+
+html.dark {
+    background-color: rgb(74, 74, 79);
+    color: #fff
+}
+
+.dark .nav-links a {
+    color: #fff;
+}
