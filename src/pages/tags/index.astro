@@ -1,21 +1,16 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
-const { frontmatter } = Astro.props;
----
-<BaseLayout pageTitle={frontmatter.title}>
-    <p><b>Description:</b> <em>{frontmatter.description}</em></p>
-    <p><b>Written by</b> <em>{frontmatter.author}</em></p>
-    <p><b>Pusblished on:</b> {frontmatter.pubDate.slice(0,10)}</p>
-    <p><b>Tags:</b></p>
-    <!-- <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> -->
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
+const pageTitle = "Tag Index";
+const allPosts = await Astro.glob('../posts/*.md');
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+---
+<BaseLayout pageTitle={pageTitle}>
     <div class="tags">
-        {frontmatter.tags.map((tag) => 
+        {tags.map((tag) => 
             <p class="tag"><a href={`/tags/${tag}`}>#{tag}</a></p>
         )}
     </div>
-
-    <slot />
 </BaseLayout>
 
 <style>
